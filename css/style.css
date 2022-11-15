@@ -1,0 +1,196 @@
+/* Reset do Browser */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando a Página de Login */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-container {
+    display: flex;
+
+    width: 800px;
+    height: 500px;
+    border-radius: 3px;
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.05);
+    background-color: #fff;
+}
+
+.section {
+    width: 50%;
+    padding: 65px;
+}
+
+.section-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 3px 0 0 3px;
+    background-color: #30373f;
+}
+
+.section-brand img {
+    width: 100px;
+    margin-bottom: 40px;
+}
+
+.section-brand h1 {
+    font-size: 21px;
+    text-align: center;
+    margin: 20px 0;
+    color: #bab29a;
+}
+
+.section-brand p {
+    font-size: 14px;
+    text-align: center;
+    color: #eee;
+}
+
+.section-brand a {
+    color: #c8a740;
+}
+
+.login-section {
+    display: flex;
+    align-items: center;
+}
+
+/* .login-section form {
+    border: 1px solid tomato;
+} */
+
+.icone-login {
+    color: #30373f;
+    font-size: 17px;
+    padding: 0.5px;
+    display: block;
+    margin-right: 5px;
+}
+
+.div-inputs {
+    padding: 20px 0;
+}
+
+.div-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-section a {
+    font-style: italic;
+}
+
+.login-section label, a {
+    font-size: 12px;
+    color: #30373f;
+}
+
+.login-section input {
+    color: #c8a740;
+}
+
+.form-login {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #30373f;
+    margin-bottom: 20px;
+}
+
+.login-section #user, #password {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.switch-wrapper {
+    display: inline-block;
+    width: 30px;
+    height: 14px;
+    position: relative;
+}
+
+.switch-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #30373f;
+}
+
+.switch-button::before {
+    content: " ";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 1px;
+    bottom: 1px;
+    border-radius: 50px;
+    background-color: #c8a740;
+    transition: .4s all ease;
+}
+
+input[type="checkbox"]:checked + .switch-button{
+    background-color: #6a5d38;
+}
+
+input[type="checkbox"]:checked + .switch-button::before{
+    transform: translateX(16px);
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+.enter-btn {
+    display: block;
+    width: 80%;
+    border: none;
+    border-radius: 50px;
+    padding: 5px;
+    margin: 20px auto 0;
+    background-color: #c8a740;
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+
+.enter-btn:hover {
+    background-color: #b19133;
+}
+
+.enter-btn i {
+    margin-right: 10px;
+}
+
