@@ -66,11 +66,13 @@ body {
 
 .login-section {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 /* .login-section form {
-    border: 1px solid tomato;
+    padding: 10px;
+    border: 1px solid #c8a740;
 } */
 
 .icone-login {
@@ -172,7 +174,6 @@ input[type="checkbox"] {
     width: 0;
     height: 0;
 }
-
 
 .enter-btn {
     display: block;
