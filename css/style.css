@@ -20,12 +20,12 @@ body {
 
 .main-container {
     display: flex;
-
     width: 800px;
     height: 500px;
     border-radius: 3px;
     box-shadow: 4px 4px 15px rgba(0,0,0,0.05);
     background-color: #fff;
+    position: relative;
 }
 
 .section {
@@ -69,11 +69,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-/* .login-section form {
-    padding: 10px;
-    border: 1px solid #c8a740;
-} */
 
 .icone-login {
     color: #30373f;
@@ -195,3 +190,82 @@ input[type="checkbox"] {
     margin-right: 10px;
 }
 
+/* Estilizando a Página de Modos de Partida */
+
+.display-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section h1 {
+    color: #c8a740;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 45%;
+    padding-bottom: 20px;
+}
+
+.section p {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #c8a740;
+    border-top: 1px solid #c8a740;
+}
+
+.color-shadow {
+    color: #fff;
+}
+
+.color-bg-shadow {
+    background-color: #fff;
+}
+
+.color-light {
+    color:#30373f;
+}
+
+.color-bg-light {
+    background-color:#30373f;
+}
+
+.enter-modo-btn {
+    display: block;
+    width: 70%;
+    padding: 7px;
+    margin: 20px auto;
+    background-color: #30373f;
+    color: #fff;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    transition: .3s ease-in-out;
+}
+
+.enter-modo-btn:hover {
+    background-color: #3b444e;
+}
+
+.enter-modo-btn i {
+    margin-right: 10px;
+}
+
+.div-img-logo {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    background-color: #fff;
+    border: 5px solid #30373f;
+    position: absolute;
+    top: 40px;
+    left: calc(50% - 65px);
+    z-index: 1;
+}
+
+.img-trofeu {
+    width: 75px;
+    height: 75px;
+    z-index: 2;
+    position: relative;
+    top: 20px;
+    right: calc(50% - 82px);
+}
