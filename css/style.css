@@ -8,7 +8,7 @@
 
 /* Estilizando a Página de Login */
 
-body {
+.body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,9 +28,23 @@ body {
     position: relative;
 }
 
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Apagar isso no final */
+.login-form .link-entrar-modo {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}
+
 .section {
     width: 50%;
-    padding: 65px;
+    padding: 50px;
 }
 
 .section-brand {
@@ -62,12 +76,6 @@ body {
 
 .section-brand a {
     color: #c8a740;
-}
-
-.login-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .icone-login {
@@ -274,4 +282,126 @@ input[type="checkbox"] {
     position: relative;
     top: 20px;
     right: calc(50% - 82px);
+}
+
+/* Estilização da página de Equipes */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 250px;
+    padding-bottom: 15px;
+    background-color: #30373f;
+}
+
+.header img {
+    width: 70px;
+    padding-bottom: 25px;
+}
+
+.menu-navegacao {
+    display: flex;
+    gap: .8rem;
+}
+
+.menu-navegacao li {
+    list-style: none;
+}
+
+.menu-navegacao li a {
+    font-family: Roboto, "Helvetica Neue", Arial;
+    font-size: 16px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #c8a740;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+.menu-navegacao li a:hover {
+    color: #fdc504;
+}
+
+.menu-navegacao p {
+    color: #c8a740;
+}
+
+.inputs-party {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    height: 600px;
+    padding: 50px;
+}
+
+.inputs-party button {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+}
+
+.inputs-party button:hover {
+    cursor: pointer;
+}
+
+.inputs-party i {
+    font-size: 25px;
+    color: #6a5d38;
+}
+
+.div-party {
+    display: flex;
+    gap: 30px;
+}
+
+.section-party {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+.section-party input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #30373f;
+}
+
+.section-party p {
+    font-family: Roboto, "Helvetica Neue", Arial;
+    text-align: center;
+    padding: 10px;
+    color: #b19133;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 1000px;
+}
+
+.footer img {
+    width: 150px;
+}
+
+.footer p {
+    color: #30373f;
+    font-family: Roboto, "Helvetica Neue", Arial;
 }
