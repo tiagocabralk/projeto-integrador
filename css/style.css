@@ -109,6 +109,10 @@
     color: #c8a740;
 }
 
+.login-section input:focus {
+    border: 1px solid tomato;
+}
+
 .form-login {
     display: flex;
     align-items: center;
