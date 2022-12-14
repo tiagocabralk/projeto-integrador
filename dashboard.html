@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compete - Definição das Equipes</title>
+    <title>Compete - Dashboard</title>
     <!-- Import Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,96 +13,6 @@
         rel="stylesheet">
     <!-- Import Icons -->
     <script src="https://kit.fontawesome.com/9252fac622.js" crossorigin="anonymous"></script>
-
-    <style>
-        .main-dashboard {
-            /* display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center; */
-            width: 100%;
-            min-height: 100vh;
-            background-color: #30373f;
-        }
-
-        .header-dashboard {
-            
-            border-bottom: 2px solid #F9B31C;
-            position: relative;
-        }
-        
-        .header-dashboard::after {
-            content: '';
-            display: block;
-            width: 600px;
-            height: 5px;
-            background-color: #F9B31C;
-            position: absolute;
-            left: calc(50% - 300px );
-            bottom: -7px;
-        }
-        
-        .header-dashboard .svg-container svg {
-            display: block;
-            padding: 50px 0;
-            margin: 0 auto;
-            width: 200px;
-        }
-
-        .item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
-            color: #fff;
-            text-transform: uppercase;
-            font-family: Roboto, sans-serif;
-        }
-
-        .placar {
-            display: grid;
-            grid-template-columns: 3fr 1fr 3fr;
-            grid-template-areas: 
-                "time-casa barra time-desafiante"
-                "placar-casa vs placar-desafiante"
-            ;
-            margin: 60px auto;
-            max-width: 600px;
-            border: 1px solid white;
-        }
-        
-        .nome-time-casa {
-            grid-area: time-casa;
-            border-bottom: 1px solid white;
-        }
-
-        .barra-vertical-placar {
-            grid-area: barra;
-            border-bottom: 1px solid white;
-        }
-
-        .nome-time-desafiante {
-            grid-area: time-desafiante;
-            border-bottom: 1px solid white;
-        }
-
-        .placar-time-casa {
-            font-size: 100px;
-            color: #F9B31C;
-            grid-area: placar-casa;
-        }
-
-        .vs {
-            font-size: 40px;
-            grid-area: vs;
-        }
-
-        .placar-time-desafiante {
-            font-size: 100px;
-            color: #F9B31C;
-            grid-area: placar-desafiante;
-        }
-    </style>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -162,23 +72,36 @@
         <section class="placar">
             <h2 class="item nome-time-casa">Time 1</h2>
             <p class="item placar-time-casa">2</p>
+            <div class="add-gol-casa">
+                <button><i class="fa-solid fa-plus"></i></button>
+                <button><i class="fa-solid fa-minus"></i></button>
+            </div>
 
             <p class="item barra-vertical-placar">|</p>
             <p class="item vs">x</p>
 
             <h2 class="item nome-time-desafiante">Time 2</h2>
             <p class="item placar-time-desafiante">0</p>
+            <div class="add-gol-desafiante">
+                <button><i class="fa-solid fa-plus"></i></button>
+                <button><i class="fa-solid fa-minus"></i></button>
+            </div>
         </section>
 
         <section class="tempo">
             <p>0:09:<span>57</span></p>
-            <button><i class="fa-solid fa-pause"></i></button>
-            <button><i class="fa-solid fa-stop"></i></button>
+            <div class="btn-controls">
+                <button><i class="fa-solid fa-pause"></i></button>
+                <button><i class="fa-solid fa-stop"></i></button>
+            </div>
         </section>
+
+        <p class="status-partida"><i class="fa-regular fa-futbol"></i> Partida em andamento...</p>
 
         <section class="proxima-equipe">
             <h2>Próxima equipe a jogar</h2>
-            <ul>
+            <h3>Time 3</h3>
+            <ul class="jogadores-proxima-equipe">
                 <li>Jogador 1</li>
                 <li>Jogador 2</li>
                 <li>Jogador 3</li>
@@ -188,16 +111,16 @@
 
         <section class="botoes">
             <button class="voltar">Voltar</button>
-            <button class="voltar">Sair</button>
+            <button class="sair">Sair</button>
         </section>
 
+        <footer class="footer-container" style="background-color: #fff; padding: 30px;">
+            <div class="footer">
+                <img src="img/horizontal-colorida-fundo-branco.svg" alt="Logo Compete">
+                <p>| &copy; 2022 Todos os direitos estão reservados à Compete.</p>
+            </div>
+        </footer>
     </main>
-    <!-- <footer class="footer-container">
-        <div class="footer">
-            <img src="img/horizontal-colorida-fundo-branco.svg" alt="Logo Compete">
-            <p>| &copy; 2022 Todos os direitos estão reservados à Compete.</p>
-        </div>
-    </footer> -->
 </body>
 
 </html>

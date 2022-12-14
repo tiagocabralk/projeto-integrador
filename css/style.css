@@ -23,7 +23,7 @@
     width: 800px;
     height: 500px;
     border-radius: 3px;
-    box-shadow: 4px 4px 15px rgba(0,0,0,0.05);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.05);
     background-color: #fff;
     position: relative;
 }
@@ -100,7 +100,8 @@
     font-style: italic;
 }
 
-.login-section label, a {
+.login-section label,
+a {
     font-size: 12px;
     color: #30373f;
 }
@@ -120,7 +121,9 @@
     margin-bottom: 20px;
 }
 
-.login-section #user, #password, #email {
+.login-section #user,
+#password,
+#email {
     display: block;
     width: 100%;
     padding: 5px;
@@ -168,11 +171,11 @@
     transition: .4s all ease;
 }
 
-input[type="checkbox"]:checked + .switch-button{
+input[type="checkbox"]:checked+.switch-button {
     background-color: #6a5d38;
 }
 
-input[type="checkbox"]:checked + .switch-button::before{
+input[type="checkbox"]:checked+.switch-button::before {
     transform: translateX(16px);
 }
 
@@ -240,11 +243,11 @@ input[type="checkbox"] {
 }
 
 .color-light {
-    color:#30373f;
+    color: #30373f;
 }
 
 .color-bg-light {
-    background-color:#30373f;
+    background-color: #30373f;
 }
 
 .enter-modo-btn {
@@ -408,4 +411,195 @@ input[type="checkbox"] {
 .footer p {
     color: #30373f;
     font-family: Roboto, "Helvetica Neue", Arial;
+}
+
+/* Estilizando a Dashboard */
+
+.main-dashboard {
+    /* display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; */
+    width: 100%;
+    min-height: 100vh;
+    background-color: #30373f;
+}
+
+.header-dashboard {
+
+    border-bottom: 2px solid #F9B31C;
+    position: relative;
+}
+
+.header-dashboard::after {
+    content: '';
+    display: block;
+    width: 600px;
+    height: 5px;
+    background-color: #F9B31C;
+    position: absolute;
+    left: calc(50% - 300px);
+    bottom: -7px;
+}
+
+.header-dashboard .svg-container svg {
+    display: block;
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+}
+
+.placar {
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    grid-template-areas:
+        "time-casa barra time-desafiante"
+        "placar-casa vs placar-desafiante"
+        "add-gol-casa . add-gol-desafiante"
+    ;
+    margin: 60px auto;
+    max-width: 600px;
+    border: 1px solid white;
+}
+
+.nome-time-casa {
+    grid-area: time-casa;
+    border-bottom: 1px solid white;
+}
+
+.barra-vertical-placar {
+    grid-area: barra;
+    border-bottom: 1px solid white;
+}
+
+.nome-time-desafiante {
+    grid-area: time-desafiante;
+    border-bottom: 1px solid white;
+}
+
+.placar-time-casa {
+    font-size: 100px;
+    color: #F9B31C;
+    grid-area: placar-casa;
+}
+
+.add-gol-casa {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    grid-area: add-gol-casa;
+}
+
+.add-gol-casa button {
+    flex: 1;
+    padding: 10px;
+}
+
+.vs {
+    font-size: 40px;
+    grid-area: vs;
+}
+
+.placar-time-desafiante {
+    font-size: 100px;
+    color: #F9B31C;
+    grid-area: placar-desafiante;
+}
+
+.add-gol-desafiante {
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+    grid-area: add-gol-desafiante;
+}
+
+.add-gol-desafiante button {
+    flex: 1;
+    padding: 10px;
+}
+
+.tempo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.tempo p {
+    color: #fff;
+    font-size: 60px;
+    font-family: Roboto, sans-serif;
+}
+
+.btn-controls {
+    display: flex;
+    gap: 5px;
+}
+
+.btn-controls button {
+    flex: 1 0 40px;
+    padding: 10px;
+}
+
+.status-partida {
+    font-family: Roboto, sans-serif;
+    color: rgb(55, 255, 0);
+    text-align: center;
+    padding: 30px;
+}
+
+.proxima-equipe {
+    width: 600px;
+    margin: 0 auto;
+    font-family: Roboto, sans-serif;
+    color: #fff;
+    border-bottom: 1px solid white;
+}
+
+.proxima-equipe h2 {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+.proxima-equipe h3 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    color: #F9B31C;
+}
+
+.proxima-equipe .jogadores-proxima-equipe {
+    text-align: center;
+    line-height: 2em;
+}
+
+.proxima-equipe .jogadores-proxima-equipe li {
+    list-style: none;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 250px;
+    gap: 10px;
+    padding: 20px;
+}
+
+.botoes button {
+    flex: 1;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    padding: 5px 10px;
 }
